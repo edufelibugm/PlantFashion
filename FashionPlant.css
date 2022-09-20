@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(255, 255, 255, 0.063), rgba(255, 255, 255, 0.267)), url(./img/Background.jpeg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 85%;
+    height: 85vh;
+    background: rgba(128, 128, 128, 0.641);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+nav h1 {
+    font-size: 20px;
+}
+nav ul {
+    display: inline-flex;
+    gap: 40px;
+}
+nav ul li a {
+    color: rgba(255, 255, 255, 0.695);
+    font-size: 12px;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.box {
+    width: 450px;
+    height: 100%;
+    text-align: justify;
+    position: relative;
+    padding: 50px 0px 0px 50px;
+}
+.box h1 {
+    font-size: 50px;
+}
+.box p {
+    font-size: 12px;
+    margin: 40px 0px 60px 0;
+}
+.btn {
+    font-size: 18px;
+    padding: 10px 30px;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.593);
+    border-radius: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: all .4s ease-in-out;
+    color: #000;
+}
+
+.image {
+    position: absolute;
+    top: 160px;
+    right: -150px;
+    transform: rotate(-30deg);
+}
+.image-two {
+    object-fit: contain;
+    width: 400px;
+    position: absolute;
+    top: 280px;
+    right: -150px;
+    transform: rotate(-43deg);
+}
+.image-three {
+    object-fit: contain;
+    width: 400px;
+    position: absolute;
+    top: 215px;
+    right: -150px;
+    transform: rotate(-20deg);
+}
